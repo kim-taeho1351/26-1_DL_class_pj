@@ -16,7 +16,7 @@ We cover three core paradigms of modern computer vision:
 ---
 
 ## Project Structure
-
+```bash
 26-1_DEEP_LEARNING_PJ/
 ├── data/
 │   └── test_img.jpg             # Standard testing image
@@ -27,7 +27,7 @@ We cover three core paradigms of modern computer vision:
 ├── main.py                      # Unified interactive CLI runner
 ├── requirements.txt             # Dependency list
 └── README.md                    # Project documentation
-
+```
 ---
 
 ## Models Used
