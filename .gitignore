@@ -1,0 +1,13 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# IDE(편집기) 개인 설정 파일
+.vscode/
+
+# 가상환경
+venv/
+
+# OS generated files
+.DS_Store
+Thumbs.db
