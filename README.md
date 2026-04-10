@@ -43,19 +43,26 @@ We cover three core paradigms of modern computer vision:
 ## Tasks
 
 ### 1. Vision-Language Model (VQA)
-Answer complex questions about images using a multimodal large language model.
 * **Module:** `models/qwen_vlm.py`
-* **Feature:** Conversational understanding of spatial and contextual information.
+* **Description:** Multimodal reasoning using Qwen2.5-VL. It understands spatial relationships and provides contextual answers.
+* **Input:** `test_img.jpg` + Natural Language Question (User Prompt)
+* **Output:** Generated Text Response
+* **Example:** * *Input:* "How many laptops are on the desk?"
+    * *Output:* "There are two laptops visible on the desk."
 
 ### 2. Open-Vocabulary Segmentation
-Interactive segmentation using natural language prompts without predefined class labels.
 * **Module:** `models/clip_segment.py`
-* **Feature:** Generates probability heatmaps for any queried text (e.g., "a laptop", "a student").
+* **Description:** Pixel-level segmentation for arbitrary text queries using CLIPSeg.
+* **Input:** `test_img.jpg` + Target Labels (e.g., "student", "book")
+* **Output:** Overlayed Heatmap Visualization (using Matplotlib)
+* **Example Results:** A grid of images where the requested objects are highlighted in red (high probability).
 
 ### 3. Open-Vocabulary Detection
-Detect objects and draw bounding boxes using natural language queries.
 * **Module:** `models/owl_detection.py`
-* **Feature:** Zero-shot object localization utilizing CLIP's text-image aligned embeddings.
+* **Description:** Language-driven object localization using OWL-v2.
+* **Input:** `test_img.jpg` + Object Names (List of strings)
+* **Output:** Bounding Boxes with Confidence Scores
+* **Example Results:** The image marked with colored boxes and labels like `student: 0.95`.
 
 ---
 
