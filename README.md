@@ -56,6 +56,7 @@ We cover three core paradigms of modern computer vision:
 * **Input:** `test_img.jpg` + Target Labels (e.g., "student", "book")
 * **Output:** Overlayed Heatmap Visualization (using Matplotlib)
 * **Example Results:** A grid of images where the requested objects are highlighted in red (high probability).
+![CLIPSeg Result](./examples/clipseg_example.jpg)
 
 ### 3. Open-Vocabulary Detection
 * **Module:** `models/owl_detection.py`
@@ -63,6 +64,7 @@ We cover three core paradigms of modern computer vision:
 * **Input:** `test_img.jpg` + Object Names (List of strings)
 * **Output:** Bounding Boxes with Confidence Scores
 * **Example Results:** The image marked with colored boxes and labels like `student: 0.95`.
+![OWL-v2 Result](./examples/owl_example.jpg)
 
 ---
 

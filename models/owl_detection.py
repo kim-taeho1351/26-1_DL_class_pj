@@ -48,7 +48,6 @@ def main():
     print(f"검색 대상: {texts[0]}")
 
     # 전처리 (텍스트와 이미지를 텐서로 변환)
-    print("\n⏳ 객체를 탐지하고 있습니다...\n")
     inputs = processor(text=texts, images=sample_image, return_tensors="pt").to(device)
 
     # 모델 추론
